@@ -20,5 +20,6 @@ from django.conf.urls import url
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('auth/', include('facebookauth.urls')),
+    path('home/', include('main.urls')),
     url('', include('social_django.urls', namespace='social'))
 ]

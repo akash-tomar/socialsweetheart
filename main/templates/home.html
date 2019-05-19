@@ -1,0 +1,11 @@
+{% load static %}
+
+{% block script %}<script src="{% static 'js/main.js' %}"></script>{% endblock %}
+
+<h1>
+    {{ name }}
+    <br>
+    <img src="https://graph.facebook.com/v3.3/{{ uid }}/picture?height=500">
+</h1>
+
+<a href="{% url 'facebookauth:logout' %}">Logout</a>
