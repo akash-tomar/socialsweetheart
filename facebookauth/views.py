@@ -11,4 +11,4 @@ class LoginView(View):
 class LogoutView(View):
     def get(self, request):
         logout_user(request)
-        return HttpResponse("logged out")
+        return render(request, 'logout.html')
